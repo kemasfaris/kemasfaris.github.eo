@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: #121212;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 10px;
+            /* border: 5px solid #0003ae; */
+            box-sizing: border-box;
+            /* box-shadow: 4px 4px #121212; */
+        }
+
+
+        .container {
+            margin: 100px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 80px;
+
+        }
+
+        .gambar-satu {
+            margin: 10px;
+        }
+
+        .caption {
+            font-size: large;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white;
+            width: 270px;
+            height: 410px;
+            text-align: center;
+            /* color: black; */
+
+        }
+
+        .capt {
+            font-size: 1rem;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Gallery</h1>
+    </nav>
+    <div class="container">
+        <div class="gallery">
+            <div class="caption">
+                <img class="gambar-satu" src="satu.jpg" alt="">
+                <p class="capt">Masjid Agung <br>Bandung, Indonesia</p>
+            </div>
+
+            <img src="dua.jpg" alt="">
+            <img src="tiga.jpg" alt="">
+            <img src="empat.jpg" alt="">
+            <img src="lima.jpg" alt="">
+            <img src="enam.jpg" alt="">
+            <img src="tujuh.jpg" alt="">
+            <img src="delapan.jpg" alt="">
+
+        </div>
+    </div>
+</body>
+
+</html>
